@@ -1,0 +1,5 @@
+levels:
+  1:
+    xp-required: 1000
+    rewards:
+      - SET_ARMOR: DIAMOND

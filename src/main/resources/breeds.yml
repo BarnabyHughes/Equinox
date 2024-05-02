@@ -1,0 +1,19 @@
+categories:
+  fjord:
+    category: Baroque
+    size: Medium
+    min-height: 15
+    max-height: 16
+    min-weight: 450
+    max-weight: 585
+    coat-colors:
+    - Grey
+    - Chestnut
+    - Black
+    - Bay
+    - Dun
+    coat-styles: []
+    min-expected-age: 20
+    max-expected-age: 35
+    problems:
+      Grey: melonomas

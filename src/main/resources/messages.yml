@@ -1,0 +1,4 @@
+horseinfo:
+  pages:
+    1:
+      - "&bOwner %OWNER%"
