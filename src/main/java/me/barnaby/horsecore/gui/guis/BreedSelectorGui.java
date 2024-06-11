@@ -1,12 +1,10 @@
-package me.barnaby.horsecore.gui.Guis;
+package me.barnaby.horsecore.gui.guis;
 
 import me.barnaby.horsecore.HorseCore;
 import me.barnaby.horsecore.gui.Gui;
 import me.barnaby.horsecore.gui.GuiItem;
 import me.barnaby.horsecore.horse.breed.Breed;
-import me.barnaby.horsecore.horse.breed.BreedManager;
 import me.barnaby.horsecore.utils.ItemBuilder;
-import me.barnaby.horsecore.utils.ParticleUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.Sound;

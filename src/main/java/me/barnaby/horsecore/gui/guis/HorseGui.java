@@ -1,4 +1,4 @@
-package me.barnaby.horsecore.gui.Guis;
+package me.barnaby.horsecore.gui.guis;
 
 import me.barnaby.horsecore.Horse;
 import me.barnaby.horsecore.gui.Gui;

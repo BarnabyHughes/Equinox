@@ -3,7 +3,7 @@ package me.barnaby.horsecore.commands.commands;
 import me.barnaby.horsecore.HorseCore;
 import me.barnaby.horsecore.commands.Command;
 import me.barnaby.horsecore.commands.CommandExecutor;
-import me.barnaby.horsecore.gui.Guis.BreedSelectorGui;
+import me.barnaby.horsecore.gui.guis.BreedSelectorGui;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 

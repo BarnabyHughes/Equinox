@@ -8,6 +8,7 @@ import me.barnaby.horsecore.horse.breed.BreedManager;
 import me.barnaby.horsecore.listeners.EntitySpawnListener;
 import me.barnaby.horsecore.listeners.InventoryClickListener;
 import me.barnaby.horsecore.listeners.PlayerInteractEntityListener;
+import me.barnaby.horsecore.listeners.PlayerInteractListener;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
@@ -53,6 +54,7 @@ public class HorseCore extends JavaPlugin {
         pm.registerEvents(new InventoryClickListener(), this);
         pm.registerEvents(new EntitySpawnListener(this), this);
         pm.registerEvents(new PlayerInteractEntityListener(this), this);
+        pm.registerEvents(new PlayerInteractListener(), this);
     }
 
     private void registerCommands() {

@@ -1,10 +1,9 @@
 package me.barnaby.horsecore.listeners;
 
 import me.barnaby.horsecore.HorseCore;
-import me.barnaby.horsecore.gui.Guis.HorseGui;
+import me.barnaby.horsecore.gui.guis.HorseGui;
 import me.barnaby.horsecore.utils.ParticleUtil;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.entity.Horse;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -21,7 +20,6 @@ public class PlayerInteractEntityListener implements Listener {
     @EventHandler
     public void onInteract(PlayerInteractEntityEvent event) {
         if (event.getRightClicked() instanceof Horse horse) {
-            System.out.println("test");
             event.setCancelled(true);
             if (!horseCore.getHorseManager().getClaimedHorses().keySet().contains(horse.getUniqueId())) {
                 ParticleUtil.outlineHorse(horse);
@@ -33,7 +31,8 @@ public class PlayerInteractEntityListener implements Listener {
             }
             else {
                 me.barnaby.horsecore.Horse claimedHorse = horseCore.getHorseManager().getClaimedHorses().get(horse.getUniqueId());
-                new HorseGui(claimedHorse).open(event.getPlayer());
+                //new HorseGui(claimedHorse).open(event.getPlayer());
+                claimedHorse.crossTie(event.getPlayer());
             }
         }
     }
